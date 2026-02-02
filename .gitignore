@@ -1,0 +1,46 @@
+# ===== General / OS =====
+.DS_Store
+Thumbs.db
+
+# ===== VS Code (compartir solo lo útil) =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# ===== Frontend (Angular + npm) =====
+Frontend/dist/
+Frontend/tmp/
+Frontend/out-tsc/
+Frontend/bazel-out/
+Frontend/node_modules/
+Frontend/npm-debug.log
+Frontend/yarn-error.log
+Frontend/.angular/cache
+Frontend/.sass-cache/
+Frontend/coverage
+Frontend/libpeerconnection.log
+Frontend/testem.log
+Frontend/typings
+Frontend/__screenshots__/
+
+# ===== Backend (Maven / Spring Boot) =====
+Backend/target/
+Backend/.mvn/timing.properties
+Backend/.mvn/wrapper/maven-wrapper.jar
+Backend/pom.xml.tag
+Backend/pom.xml.releaseBackup
+Backend/pom.xml.versionsBackup
+Backend/pom.xml.next
+Backend/release.properties
+Backend/dependency-reduced-pom.xml
+Backend/buildNumber.properties
+
+# ===== IDEs Java =====
+.idea/
+.project
+.classpath
+.settings/
+*.iml
