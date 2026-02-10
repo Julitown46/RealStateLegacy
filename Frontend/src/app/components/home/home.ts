@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home {
+  isLoaded = false;
 
+  ngOnInit() {
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 100);
+  }
 }
