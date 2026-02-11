@@ -2,89 +2,75 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
     <div class="h-20 flex items-center">
+
       <div class="w-full flex items-center justify-between md:hidden">
         <a routerLink="/" class="text-xl font-bold text-primary">
           <img src="Logo.png" alt="Logo" class="h-12 w-12" />
         </a>
-
-        <button
-          type="button"
-          class="cursor-pointer inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-gold hover:bg-background/60
-                 focus:outline-none focus:ring-2 focus:ring-gold/50"
-          (click)="toggleMenu()"
-          [attr.aria-expanded]="menuOpen()"
-          aria-label="Abrir menú"
-        >
-
+        <button type="button"
+          class="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-gold hover:bg-background/60 focus:outline-none focus:ring-2 focus:ring-gold/50"
+          (click)="toggleMenu()" [attr.aria-expanded]="menuOpen()" aria-label="Abrir menú">
           @if (!menuOpen()) {
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
           } @else {
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
           }
         </button>
       </div>
 
-      <div class="hidden md:block w-full">
-        <div class="flex items-center justify-center h-20">
-          <div class="flex items-baseline space-x-15">
-            <a routerLink="/home"
-              class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out px-2 py-2 rounded-md text-xl font-medium">
-              Inicio
-            </a>
+      <div class="hidden md:flex w-full items-center justify-center gap-50 relative h-full">
 
-            <a routerLink="/about"
-              class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out px-2 py-2 rounded-md text-xl font-medium">
-              ¿Quienes somos?
-            </a>
-
-            <div class="flex-shrink-0">
-              <a routerLink="/" class="text-xl font-bold text-primary">
-                <img src="Logo.png" alt="Logo" class="h-18 w-18 inline-block mr-2">
-              </a>
-            </div>
-
-            <a routerLink="/services"
-              class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out px-2 py-2 rounded-md text-xl font-medium">
-              Servicios
-            </a>
-
-            <a routerLink="/contact"
-              class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out px-2 py-2 rounded-md text-xl font-medium">
-              Contacto
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    @if (menuOpen()) {
-      <div class="md:hidden absolute left-0 right-0 top-full bg-background/95 backdrop-blur-md border-b border-border/50">
-        <div class="px-4 py-3 space-y-1">
-          <a routerLink="/home" (click)="closeMenu()"
-            class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+        <div class="flex items-center space-x-8">
+          <a routerLink="/home"
+            class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
             Inicio
           </a>
-
-          <a routerLink="/about" (click)="closeMenu()"
-            class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
-            ¿Quienes somos?
+          <a routerLink="/about"
+            class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
+            Sobre nosotros
           </a>
+        </div>
 
-          <a routerLink="/services" (click)="closeMenu()"
-            class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <a routerLink="/" class="block hover:opacity-90 transition-opacity">
+            <img src="Logo.png" alt="Logo" class="h-20 w-20">
+          </a>
+        </div>
+
+        <div class="flex items-center space-x-8">
+          <a routerLink="/services"
+            class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
             Servicios
           </a>
-
-          <a routerLink="/contact" (click)="closeMenu()"
-            class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+          <a routerLink="/contact"
+            class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
             Contacto
           </a>
         </div>
+
       </div>
+
+    </div>
+
+    @if (menuOpen()) {
+    <div class="md:hidden absolute left-0 right-0 top-full bg-background/95 backdrop-blur-md border-b border-border/50">
+      <div class="px-4 py-3 space-y-1">
+        <a routerLink="/home" (click)="closeMenu()"
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">Inicio</a>
+        <a routerLink="/about" (click)="closeMenu()"
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">¿Quienes
+          somos?</a>
+        <a routerLink="/services" (click)="closeMenu()"
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">Servicios</a>
+        <a routerLink="/contact" (click)="closeMenu()"
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">Contacto</a>
+      </div>
+    </div>
     }
+
   </div>
 </nav>
