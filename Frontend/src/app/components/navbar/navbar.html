@@ -7,9 +7,24 @@
         <a routerLink="/" class="text-xl font-bold text-primary">
           <img src="Logo.jpg" alt="Logo" class="h-12 w-12" />
         </a>
+
+        <div class="flex items-center gap-2">
+          <button (click)="cambiarIdioma('es')" [class.opacity-100]="idiomaActual === 'es'"
+            [class.opacity-50]="idiomaActual !== 'es'" class="cursor-pointer hover:opacity-100 transition-opacity"
+            title="Español">
+            🇪🇸
+          </button>
+          <p class="text-gold"> / </p>
+          <button (click)="cambiarIdioma('en')" [class.opacity-100]="idiomaActual === 'en'"
+            [class.opacity-50]="idiomaActual !== 'en'" class="cursor-pointer hover:opacity-100 transition-opacity"
+            title="English">
+            🇬🇧
+          </button>
+        </div>
+
         <button type="button"
           class="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-gold hover:bg-background/60 focus:outline-none focus:ring-2 focus:ring-gold/50"
-          (click)="toggleMenu()" [attr.aria-expanded]="menuOpen()" aria-label="Abrir menú">
+          (click)="toggleMenu()" [attr.aria-expanded]="menuOpen()" [attr.aria-label]="'navbar.menuToggle' | translate">
           @if (!menuOpen()) {
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -27,11 +42,11 @@
         <div class="flex items-center space-x-8">
           <a routerLink="/home"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
-            Inicio
+            {{ 'navbar.home' | translate }}
           </a>
           <a routerLink="/about"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
-            Sobre nosotros
+            {{ 'navbar.about' | translate }}
           </a>
         </div>
 
@@ -44,12 +59,26 @@
         <div class="flex items-center space-x-8">
           <a routerLink="/services"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
-            Servicios
+            {{ 'navbar.services' | translate }}
           </a>
           <a routerLink="/contact"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
-            Contacto
+            {{ 'navbar.contact' | translate }}
           </a>
+        </div>
+
+        <div class="absolute right-0 flex items-center gap-2">
+          <button (click)="cambiarIdioma('es')" [class.opacity-100]="idiomaActual === 'es'"
+            [class.opacity-50]="idiomaActual !== 'es'" class="cursor-pointer hover:opacity-100 transition-opacity text-xl"
+            title="Español">
+            🇪🇸
+          </button>
+          <p class="text-gold text-xl"> / </p>
+          <button (click)="cambiarIdioma('en')" [class.opacity-100]="idiomaActual === 'en'"
+            [class.opacity-50]="idiomaActual !== 'en'" class="cursor-pointer hover:opacity-100 transition-opacity text-xl"
+            title="English">
+            🇬🇧
+          </button>
         </div>
 
       </div>
@@ -60,14 +89,21 @@
     <div class="md:hidden absolute left-0 right-0 top-full bg-background/95 backdrop-blur-md border-b border-border/50">
       <div class="px-4 py-3 space-y-1">
         <a routerLink="/home" (click)="closeMenu()"
-          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">Inicio</a>
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+          {{ 'navbar.home' | translate }}
+        </a>
         <a routerLink="/about" (click)="closeMenu()"
-          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">¿Quienes
-          somos?</a>
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+          {{ 'navbar.about' | translate }}
+        </a>
         <a routerLink="/services" (click)="closeMenu()"
-          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">Servicios</a>
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+          {{ 'navbar.services' | translate }}
+        </a>
         <a routerLink="/contact" (click)="closeMenu()"
-          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">Contacto</a>
+          class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
+          {{ 'navbar.contact' | translate }}
+        </a>
       </div>
     </div>
     }

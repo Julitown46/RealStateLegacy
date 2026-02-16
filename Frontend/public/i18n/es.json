@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "menuToggle": "Abrir menú"
+  },
+  "home": {
+    "subtitle": "Exclusivo en Costa del Sol",
+    "title": "Propiedades de Lujo",
+    "titleHighlight": "en Malaga",
+    "description": "Descubra mansiones y villas exclusivas en las ubicaciones más privilegiadas del Mediterráneo. Un servicio personalizado para clientes exigentes.",
+    "servicesBtn": "Servicios",
+    "contactBtn": "Contactar",
+    "explore": "Explorar"
+  },
+  "footer": {
+    "home": "Inicio",
+    "about": "¿Quiénes somos?",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "copyright": "© 2026 J&J Legacy. Todos los derechos reservados.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "tiktok": "TikTok"
+  }
+}
