@@ -11,7 +11,7 @@
     "title": "Luxury Properties",
     "titleHighlight": "in Malaga",
     "description": "Discover exclusive mansions and villas in the most privileged Mediterranean locations. Personalized service for discerning clients.",
-    "aboutBtn": "About Us",
+    "housesBtn": "Properties",
     "contactBtn": "Contact",
     "explore": "Explore"
   },
@@ -24,6 +24,14 @@
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "tiktok": "TikTok"
+  },
+  "houses": {
+    "title": "Exclusive Portfolio",
+    "subtitle": "Properties",
+    "highlight": " featured",
+    "description": "A carefully curated selection of the most exclusive residences on the Costa del Sol, from the hills of La Zagaleta to the promenades of Puerto Banús. Each property is a unique gem, chosen for its privileged location, exceptional design, and unsurpassed quality.",
+    "viewAll": "View full portfolio",
+    "cs": "Coming soon"
   },
   "about": {
     "title": "About J&J Legacy",

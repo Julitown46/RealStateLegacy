@@ -5,12 +5,13 @@ import { Toast } from './components/toast/toast';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
 import { Home } from './components/home/home';
+import { Houses } from './components/houses/houses';
 import { About } from './components/about/about';
 import { Contact } from './components/contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Toast, Navbar, Footer, Home, About, Contact, TranslateModule],
+  imports: [Toast, Navbar, Footer, Home, Houses, About, Contact, TranslateModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

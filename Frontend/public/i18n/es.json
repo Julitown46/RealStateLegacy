@@ -11,7 +11,7 @@
     "title": "Propiedades de Lujo",
     "titleHighlight": "en Málaga",
     "description": "Descubra mansiones y villas exclusivas en las ubicaciones más privilegiadas del Mediterráneo. Un servicio personalizado para clientes exigentes.",
-    "aboutBtn": "Sobre nosotros",
+    "housesBtn": "Propiedades",
     "contactBtn": "Contactar",
     "explore": "Explorar"
   },
@@ -24,6 +24,14 @@
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "tiktok": "TikTok"
+  },
+  "houses": {
+    "title": "Portfolio Exclusivo",
+    "subtitle": "Propiedades",
+    "highlight": " destacadas",
+    "description": "Una selección cuidadosa de las residencias más exclusivas de la Costa del Sol, desde las colinas de La Zagaleta hasta los paseos de Puerto Banús. Cada propiedad es una joya única, elegida por su ubicación privilegiada, diseño excepcional y calidad insuperable.",
+    "viewAll": "Ver todo el portfolio",
+    "cs": "Próximamente"
   },
   "about": {
     "title": "Sobre J&J Legacy",
