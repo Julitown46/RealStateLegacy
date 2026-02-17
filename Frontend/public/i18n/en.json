@@ -25,6 +25,19 @@
     "linkedin": "LinkedIn",
     "tiktok": "TikTok"
   },
+  "about": {
+    "title": "About J&J Legacy",
+    "subtitle": "A legacy of",
+    "highlight": " excellence",
+    "description": "J&J Legacy was born from a passion for luxury real estate and a commitment to exceptional service. We connect select clients with the most exclusive properties on the Costa del Sol.",
+    "description2": "Our team of experts knows every corner of Malaga, from the hills of La Zagaleta to the promenades of Puerto Banús. We understand that a luxury property is more than an investment: it's a lifestyle.",
+    "value1Title": "Absolute Discretion",
+    "value1Desc": "We protect our clients' privacy in every transaction. Your information is sacred.",
+    "value2Title": "Excellence",
+    "value2Desc": "We only work with properties that meet the highest standards of quality and location.",
+    "value3Title": "Personalized Service",
+    "value3Desc": "Each client receives exclusive attention from a dedicated advisor throughout the process."
+  },
   "contact": {
     "contact": "Contact",
     "talk": "Let's talk about your next",

@@ -25,6 +25,19 @@
     "linkedin": "LinkedIn",
     "tiktok": "TikTok"
   },
+  "about": {
+    "title": "Sobre J&J Legacy",
+    "subtitle": "Un legado de",
+    "highlight": " excelencia",
+    "description": "J&J Legacy nace de la pasión por el real estate de lujo y el compromiso con un servicio excepcional. Conectamos a clientes selectos con las propiedades más exclusivas de la Costa del Sol.",
+    "description2": "Nuestro equipo de expertos ofrece un servicio personalizado, garantizando discreción absoluta y una experiencia sin igual. En J&J Legacy, cada propiedad es más que una inversión: es un estilo de vida.",
+    "value1Title": "Discreción Absoluta",
+    "value1Desc": "Protegemos la privacidad de nuestros clientes en cada transacción. Su información essagrada.",
+    "value2Title": "Excelencia",
+    "value2Desc": "Solo trabajamos con propiedades que cumplen los más altos estándares de calidad y ubicación.",
+    "value3Title": "Servicio Personalizado",
+    "value3Desc": "Cada cliente recibe atención exclusiva de un asesor dedicado durante todo el proceso."
+  },
   "contact": {
     "contact": "Contacto",
     "talk": "Hablemos de su próxima",
