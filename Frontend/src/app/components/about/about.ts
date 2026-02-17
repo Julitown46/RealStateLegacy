@@ -8,5 +8,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './about.css',
 })
 export class About {
+  isLoaded = false;
 
+  ngOnInit() {
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 100);
+  }
 }

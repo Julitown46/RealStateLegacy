@@ -9,5 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.css',
 })
 export class Contact {
+  isLoaded = false;
 
+  ngOnInit() {
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 100);
+  }
 }
