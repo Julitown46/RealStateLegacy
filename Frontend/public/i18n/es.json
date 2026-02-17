@@ -9,7 +9,7 @@
   "home": {
     "subtitle": "Exclusivo en Costa del Sol",
     "title": "Propiedades de Lujo",
-    "titleHighlight": "en Malaga",
+    "titleHighlight": "en Málaga",
     "description": "Descubra mansiones y villas exclusivas en las ubicaciones más privilegiadas del Mediterráneo. Un servicio personalizado para clientes exigentes.",
     "servicesBtn": "Servicios",
     "contactBtn": "Contactar",
@@ -24,5 +24,17 @@
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "tiktok": "TikTok"
+  },
+  "contact": {
+    "contact": "Contacto",
+    "talk": "Hablemos de su próxima",
+    "property": " propiedad",
+    "conversation": "Prefererimos una conversación personal. Contáctenos directamente yprogramaremos una consulta privada a su conveniencia.",
+    "phone": "Teléfono",
+    "line": "Línea directa",
+    "whatsappResponse": "Respuesta en 24h",
+    "email": "Consultas confidenciales",
+    "hours": "Atención personalizada: Lunes a Viernes, 9:00 - 20:00",
+    "consultation": "Para consultas fuera de horario o visitas privadas, contacte vía WhatsApp.\n        Todas las comunicaciones son estrictamente confidenciales."
   }
 }
