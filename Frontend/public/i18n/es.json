@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Inicio",
     "about": "Sobre nosotros",
-    "services": "Servicios",
+    "houses": "Propiedades",
     "contact": "Contacto",
     "menuToggle": "Abrir menú"
   },
@@ -11,14 +11,14 @@
     "title": "Propiedades de Lujo",
     "titleHighlight": "en Málaga",
     "description": "Descubra mansiones y villas exclusivas en las ubicaciones más privilegiadas del Mediterráneo. Un servicio personalizado para clientes exigentes.",
-    "servicesBtn": "Servicios",
+    "aboutBtn": "Sobre nosotros",
     "contactBtn": "Contactar",
     "explore": "Explorar"
   },
   "footer": {
     "home": "Inicio",
     "about": "¿Quiénes somos?",
-    "services": "Servicios",
+    "houses": "Propiedades",
     "contact": "Contacto",
     "copyright": "© 2026 J&J Legacy. Todos los derechos reservados.",
     "instagram": "Instagram",

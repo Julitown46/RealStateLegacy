@@ -4,7 +4,7 @@
     <div class="h-20 flex items-center">
 
       <div class="w-full flex items-center justify-between md:hidden">
-        <a routerLink="/" class="text-xl font-bold text-primary">
+        <a (click)="scrollToSection('home')" class="cursor-pointer text-xl font-bold text-primary">
           <img src="Logo.jpg" alt="Logo" class="h-20 w-20" />
         </a>
 
@@ -40,28 +40,28 @@
       <div class="hidden md:flex w-full items-center justify-center gap-50 relative h-full">
 
         <div class="flex items-center space-x-8">
-          <a routerLink="/home"
+          <a (click)="scrollToSection('home')"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
             {{ 'navbar.home' | translate }}
           </a>
-          <a routerLink="/about"
+          <a (click)="scrollToSection('nosotros')"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
             {{ 'navbar.about' | translate }}
           </a>
         </div>
 
         <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <a routerLink="/" class="block hover:opacity-90 transition-opacity">
+          <a (click)="scrollToSection('home')" class="cursor-pointer block hover:opacity-90 transition-opacity">
             <img src="Logo.jpg" alt="Logo" class="h-20 w-20">
           </a>
         </div>
 
         <div class="flex items-center space-x-8">
-          <a routerLink="/services"
+          <a (click)="scrollToSection('casas')"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
-            {{ 'navbar.services' | translate }}
+            {{ 'navbar.houses' | translate }}
           </a>
-          <a routerLink="/contact"
+          <a (click)="scrollToSection('contacto')"
             class="cursor-pointer text-muted-foreground hover:text-gold transition-colors duration-150 ease-out text-xl font-medium">
             {{ 'navbar.contact' | translate }}
           </a>
@@ -69,14 +69,14 @@
 
         <div class="absolute right-0 flex items-center gap-2">
           <button (click)="cambiarIdioma('es')" [class.opacity-100]="idiomaActual === 'es'"
-            [class.opacity-50]="idiomaActual !== 'es'" class="cursor-pointer hover:opacity-100 transition-opacity text-xl"
-            title="Español">
+            [class.opacity-50]="idiomaActual !== 'es'"
+            class="cursor-pointer hover:opacity-100 transition-opacity text-xl" title="Español">
             🇪🇸
           </button>
           <p class="text-gold text-xl"> / </p>
           <button (click)="cambiarIdioma('en')" [class.opacity-100]="idiomaActual === 'en'"
-            [class.opacity-50]="idiomaActual !== 'en'" class="cursor-pointer hover:opacity-100 transition-opacity text-xl"
-            title="English">
+            [class.opacity-50]="idiomaActual !== 'en'"
+            class="cursor-pointer hover:opacity-100 transition-opacity text-xl" title="English">
             🇬🇧
           </button>
         </div>
@@ -88,19 +88,19 @@
     @if (menuOpen()) {
     <div class="md:hidden absolute left-0 right-0 top-full bg-background/95 backdrop-blur-md border-b border-border/50">
       <div class="px-4 py-3 space-y-1">
-        <a routerLink="/home" (click)="closeMenu()"
+        <a (click)="scrollToSection('home')"
           class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
           {{ 'navbar.home' | translate }}
         </a>
-        <a routerLink="/about" (click)="closeMenu()"
+        <a (click)="scrollToSection('nosotros')"
           class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
           {{ 'navbar.about' | translate }}
         </a>
-        <a routerLink="/services" (click)="closeMenu()"
+        <a (click)="scrollToSection('casas')"
           class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
-          {{ 'navbar.services' | translate }}
+          {{ 'navbar.houses' | translate }}
         </a>
-        <a routerLink="/contact" (click)="closeMenu()"
+        <a (click)="scrollToSection('contacto')"
           class="cursor-pointer block rounded-md px-3 py-3 text-lg font-medium text-muted-foreground hover:text-gold hover:bg-background/60">
           {{ 'navbar.contact' | translate }}
         </a>

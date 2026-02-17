@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Home",
     "about": "About Us",
-    "services": "Services",
+    "houses": "Properties",
     "contact": "Contact",
     "menuToggle": "Open menu"
   },
@@ -11,14 +11,14 @@
     "title": "Luxury Properties",
     "titleHighlight": "in Malaga",
     "description": "Discover exclusive mansions and villas in the most privileged Mediterranean locations. Personalized service for discerning clients.",
-    "servicesBtn": "Services",
+    "aboutBtn": "About Us",
     "contactBtn": "Contact",
     "explore": "Explore"
   },
   "footer": {
     "home": "Home",
     "about": "Who are we?",
-    "services": "Services",
+    "houses": "Properties",
     "contact": "Contact",
     "copyright": "© 2026 J&J Legacy. All rights reserved.",
     "instagram": "Instagram",
