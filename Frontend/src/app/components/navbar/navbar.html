@@ -4,21 +4,23 @@
     <div class="h-20 flex items-center">
 
       <div class="w-full flex items-center justify-between md:hidden">
-        <a (click)="scrollToSection('home')" class="cursor-pointer text-xl font-bold text-primary">
-          <img src="Logo.jpg" alt="Logo" class="h-20 w-20" />
+        <a (click)="scrollToSection('home')" class="cursor-pointer text-xl font-bold text-primary mt-1">
+          <img src="Logo.png" alt="Logo" class="h-20 w-28" />
         </a>
 
         <div class="flex items-center gap-2">
           <button (click)="cambiarIdioma('es')" [class.opacity-100]="idiomaActual === 'es'"
             [class.opacity-50]="idiomaActual !== 'es'" class="cursor-pointer hover:opacity-100 transition-opacity"
             title="Español">
-            🇪🇸
+            <img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" alt="Español"
+              class="inline-block rounded-sm">
           </button>
           <p class="text-gold"> / </p>
           <button (click)="cambiarIdioma('en')" [class.opacity-100]="idiomaActual === 'en'"
             [class.opacity-50]="idiomaActual !== 'en'" class="cursor-pointer hover:opacity-100 transition-opacity"
             title="English">
-            🇬🇧
+            <img src="https://flagcdn.com/24x18/gb.png" srcset="https://flagcdn.com/48x36/gb.png 2x" alt="English"
+              class="inline-block rounded-sm">
           </button>
         </div>
 
@@ -50,9 +52,9 @@
           </a>
         </div>
 
-        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-1">
           <a (click)="scrollToSection('home')" class="cursor-pointer block hover:opacity-90 transition-opacity">
-            <img src="Logo.jpg" alt="Logo" class="h-20 w-20">
+            <img src="Logo.png" alt="Logo" class="h-24 w-30">
           </a>
         </div>
 
@@ -71,13 +73,15 @@
           <button (click)="cambiarIdioma('es')" [class.opacity-100]="idiomaActual === 'es'"
             [class.opacity-50]="idiomaActual !== 'es'"
             class="cursor-pointer hover:opacity-100 transition-opacity text-xl" title="Español">
-            🇪🇸
+            <img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" alt="Español"
+              class="inline-block rounded-sm">
           </button>
           <p class="text-gold text-xl"> / </p>
           <button (click)="cambiarIdioma('en')" [class.opacity-100]="idiomaActual === 'en'"
             [class.opacity-50]="idiomaActual !== 'en'"
             class="cursor-pointer hover:opacity-100 transition-opacity text-xl" title="English">
-            🇬🇧
+            <img src="https://flagcdn.com/24x18/gb.png" srcset="https://flagcdn.com/48x36/gb.png 2x" alt="English"
+              class="inline-block rounded-sm">
           </button>
         </div>
 
